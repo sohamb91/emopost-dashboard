@@ -15,7 +15,14 @@ module.exports = {
       '6xl': '4rem',
     },
     extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
       colors: {
+        primary: '#6C5FFC',
+        accent: '#332C49',
+        'primary-bg-dark': '#968AB6',
+        'primary-bg-light': '#FBF8FF',
         gray: {
           100: '#f7fafc',
           200: '#edf2f7',
@@ -38,6 +45,10 @@ module.exports = {
           800: '#2c5282',
           900: '#2a4365',
         },
+      },
+      gridTemplateColumns: {
+        sidebar: '300px auto',
+        'sidebar-collapsed': '64px auto',
       },
     },
   },

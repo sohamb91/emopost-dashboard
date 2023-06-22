@@ -2,8 +2,12 @@ import '../styles/global.css';
 
 import type { AppProps } from 'next/app';
 
-const MyApp = ({ Component, pageProps }: AppProps) => (
-  <Component {...pageProps} />
-);
+import { Provider } from '@/store/StoreContext';
+
+const MyApp = ({ Component, pageProps }: AppProps) => {
+  const getLayout = Component.getLayout || ((page: any) => page);
+
+  return <Provider>{getLayout(<Component {...pageProps} />)}</Provider>;
+};
 
 export default MyApp;

@@ -1,5 +1,7 @@
 @tailwind base;
 
+
+
 a {
   @apply text-blue-700;
 }
@@ -11,6 +13,7 @@ a:hover {
 @tailwind components;
 
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .content p {
   @apply my-6;
@@ -18,4 +21,37 @@ a:hover {
 
 .content ul {
   @apply my-6;
+}
+body {
+    overscroll-behavior-y: none;
+    font-family: 'Open Sans', sans-serif;
+}
+.rbc-btn-group button {
+  background-color: #332C49 !important;
+  color: white !important;
+  font-size: 12px;
+  border: none !important;
+  margin-left:4px !important;
+  border-radius: 4px !important;
+  padding: 6px 16px !important
+}
+.rbc-day-bg.rbc-today {
+  background-color: #FBF8FF !important;
+}
+
+.react-datepicker-wrapper {
+  width: 100%
+}
+.react-datepicker__input-container {
+  width: 100%;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  height: 40px
+}
+.react-datepicker__input-container input {
+  height: 100%;
+  width: 100%
+}
+.rbc-event, .rbc-day-slot .rbc-background-event {
+  background-color: #332C49 !important;
 }

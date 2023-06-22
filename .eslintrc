@@ -43,6 +43,8 @@
             "endOfLine": "auto"
           }
         ],
+        "react/jsx-no-useless-fragment": "off",
+        "no-underscore-dangle": "off",
         "react/function-component-definition": "off", // Disable Airbnb's specific function type
         "react/destructuring-assignment": "off", // Vscode doesn't support automatically destructuring, it's a pain to add a new variable
         "react/require-default-props": "off", // Allow non-defined react props as undefined
@@ -62,6 +64,7 @@
         "simple-import-sort/exports": "error", // Export configuration for `eslint-plugin-simple-import-sort`
         "@typescript-eslint/no-unused-vars": "off",
         "unused-imports/no-unused-imports": "error",
+        "jsx-ally/label-has-associated-control": "off",
         "unused-imports/no-unused-vars": [
           "error",
           { "argsIgnorePattern": "^_" }
